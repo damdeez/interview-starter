@@ -1,12 +1,18 @@
-import HomePage from '@/app/(examples)/HomePage';
+'use client';
+import Dashboard from '@/app/components/Dashboard/Dashboard';
+import Header from '@/app/components/Header/Header';
+import { ECurrencies } from '@/constants/constants';
+import { useState } from 'react';
 
-/**
- * The main page component that renders the HomePage component.
- *
- * @returns {JSX.Element} The rendered HomePage component.
- */
 const Page = () => {
-    return <HomePage />;
+  const [selectedCurrency, setSelectedCurrency] = useState<ECurrencies>(ECurrencies.USD);
+
+  return (
+    <>
+      <Header selectedCurrency={selectedCurrency} setSelectedCurrency={setSelectedCurrency} />
+      <Dashboard selectedCurrency={selectedCurrency} />
+    </>
+  );
 };
 
 export default Page;
