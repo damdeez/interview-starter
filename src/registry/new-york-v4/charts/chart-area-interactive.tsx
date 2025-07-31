@@ -224,7 +224,7 @@ export function ChartAreaInteractive() {
                             stroke='var(--color-desktop)'
                             stackId='a'
                         />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        {/* <ChartLegend content={<ChartLegendContent />} /> */}
                     </AreaChart>
                 </ChartContainer>
             </CardContent>

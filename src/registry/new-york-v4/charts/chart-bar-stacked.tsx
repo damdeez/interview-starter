@@ -54,7 +54,7 @@ export function ChartBarStacked() {
                             tickFormatter={(value) => value.slice(0, 3)}
                         />
                         <ChartTooltip content={<ChartTooltipContent hideLabel />} />
-                        <ChartLegend content={<ChartLegendContent />} />
+                        {/* <ChartLegend content={<ChartLegendContent />} /> */}
                         <Bar dataKey='desktop' stackId='a' fill='var(--color-desktop)' radius={[0, 0, 4, 4]} />
                         <Bar dataKey='mobile' stackId='a' fill='var(--color-mobile)' radius={[4, 4, 0, 0]} />
                     </BarChart>
