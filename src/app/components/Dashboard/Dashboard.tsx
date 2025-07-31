@@ -17,7 +17,7 @@ const Dashboard = ({ selectedCurrency }: { selectedCurrency: ECurrencies }) => {
 
   if (loading) {
     return (
-      <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#1A1C1E]'>
+      <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#0a0a0a]'>
         <div className='mb-4 flex flex-row items-center gap-3'>
           <Card className='w-full'>
             <CardHeader>
@@ -45,7 +45,7 @@ const Dashboard = ({ selectedCurrency }: { selectedCurrency: ECurrencies }) => {
     );
   } else if (error) {
     return (
-      <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#1A1C1E]'>
+      <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#0a0a0a]'>
         <Alert variant='destructive'>
           <AlertCircleIcon />
           <AlertTitle>Something went wrong!</AlertTitle>
@@ -56,7 +56,7 @@ const Dashboard = ({ selectedCurrency }: { selectedCurrency: ECurrencies }) => {
   }
 
   return (
-    <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#1A1C1E]'>
+    <main className='min-h-screen bg-[#F8F9FE] p-[16px] dark:bg-[#0a0a0a]'>
       <div className='mb-4 flex flex-row items-center gap-3'>
         {performanceData?.irr && performanceData30DaysAgo?.irr && (
           <FundCard

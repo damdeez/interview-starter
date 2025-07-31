@@ -23,7 +23,7 @@ const Header = ({
   setSelectedCurrency: (currency: ECurrencies) => void;
 }) => {
   return (
-    <header className='grid h-[74px] grid-cols-[auto_1fr_auto_auto] items-center justify-between gap-3 border-b border-[#92A3C740] bg-white px-4 dark:bg-[#1A1C1E] dark:border-[#92A3C740]'>
+    <header className='grid h-[74px] grid-cols-[auto_1fr_auto_auto] items-center justify-between gap-3 border-b border-[#92A3C740] bg-white px-4 dark:bg-[#0a0a0a] dark:border-[#92A3C740]'>
       <Image
         className='dark:invert'
         src='/images/foodelity-logo.png'
