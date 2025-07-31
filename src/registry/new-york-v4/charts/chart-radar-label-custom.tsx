@@ -48,13 +48,13 @@ export function ChartRadarLabelCustom() {
                         <ChartTooltip cursor={false} content={<ChartTooltipContent indicator='line' />} />
                         <PolarAngleAxis
                             dataKey='month'
-                            tick={({ x, y, textAnchor, value, index, ...props }) => {
+                            tick={({ x, y, textAnchor, index, ...props }) => {
                                 const data = chartData[index];
 
                                 return (
                                     <text
                                         x={x}
-                                        y={index === 0 ? y - 10 : y}
+                                        y={index === 0 ? (typeof y === 'number' ? y - 10 : 0) : (y ?? 0)}
                                         textAnchor={textAnchor}
                                         fontSize={13}
                                         fontWeight={500}
