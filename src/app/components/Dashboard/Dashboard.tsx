@@ -10,6 +10,7 @@ import { Skeleton } from '@/registry/new-york-v4/ui/skeleton';
 import Chart from '../Chart/Chart';
 import FundCard from '../FundCard/FundCard';
 import { AlertCircleIcon } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Dashboard = ({ selectedCurrency }: { selectedCurrency: ECurrencies }) => {
   const { performanceData, loading, error } = useFundPerformance(0, selectedCurrency);
